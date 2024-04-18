@@ -37,6 +37,9 @@ else
     exit 1
 fi
 # =========================================================
+# REPO INSTALASI SCRIPT
+REPO="https://raw.githubusercontent.com/bimaVPN/Apex/ZX"
+# =========================================================
 # BANNER INTRO
 clear
 echo -e " ${cyan}≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈${NC}"
@@ -111,17 +114,17 @@ function print_ok() {
 # =========================================================
 function print_install() {
     clear
-    echo -e "${YELLOW} ➣ $1 ${FONT}"
+    echo -e "${YELLOW} $1 ${FONT}"
     sleep 1
 }
 # =========================================================
 function print_error() {
-    echo -e "${ERROR} ${REDBG} ➣ $1 ${FONT}"
+    echo -e "${ERROR} ${REDBG} $1 ${FONT}"
 }
 # =========================================================
 function print_success() {
     if [[ 0 -eq $? ]]; then
-        echo -e "${Green} ➣ $1 berhasil dipasang${NC}"
+        echo -e "${Green} $1 berhasil dipasang${NC}"
         sleep 2
     fi
 }
